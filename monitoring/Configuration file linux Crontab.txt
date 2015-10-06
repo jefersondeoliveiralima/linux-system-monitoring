@@ -1,0 +1,23 @@
+# Monitoramento Sistema Linux
+# Versão: 1.0
+#
+# Descrição 
+#
+# O arquivo de configuração linux, acrescenta a linha de configuração no arquivo crontab do linux "/etc/crontab"
+# A linha abaixo faz a execução do arquivo bash monitorando.exp a cada 1 minuto. podendo ser configurando de acordo com a necessidade.
+
+
+
+# Monitoring Linux System
+# Version: 1.0
+#
+# Description
+#
+# The Linux configuration file adds the configuration line in Linux crontab # file " / etc / crontab "
+# The line below is running the bash monitorando.exp file every 1 minute. # setting may be according to necessity.
+
+
+
+
+
+*/1 *   * * *   root     /usr/local/bin/monitorando.exp

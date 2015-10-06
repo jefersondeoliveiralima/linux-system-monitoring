@@ -1,0 +1,71 @@
+.question-description {
+	display:none;
+	background-image:url('../images/staff-member-about-baloon2.png');
+	z-index:101;
+	width:234px;
+	height:107px;
+	position:absolute;
+	margin-left:14px;
+	margin-top:-134px;
+	color:#f7f7f7;
+	font-size:13px;
+	padding:20px;
+	font-family:Tahoma, sans-serif;
+	line-height:16px;
+	text-align:left;
+}
+
+.staff-member-description-first {
+	display:none;
+	background-image:url('../images/staff-member-about-baloon2.png');
+	z-index:101;
+	width:234px;
+	height:107px;
+	position:absolute;
+	margin-left:150px;
+	margin-top:-96px;
+	color:#f7f7f7;
+	font-size:13px;
+	padding:20px;
+	font-family:Tahoma, sans-serif;
+	line-height:16px;
+	text-align:left;
+}
+
+.client-description-first {
+	display:none;
+	background-image:url('../images/staff-member-about-baloon2.png');
+	z-index:101;
+	width:234px;
+	height:107px;
+	position:absolute;
+	margin-left:150px;
+	margin-top:-234px;
+	color:#f7f7f7;
+	font-size:13px;
+	padding:20px;
+	font-family:Tahoma, sans-serif;
+	line-height:16px;
+	text-align:left;
+}
+
+.question-description.small {
+	display:none;
+	background-image:url('../images/staff-member-about-baloon-small.png');
+	z-index:101;
+	width:234px;
+	height:92px;
+	position:absolute;
+	margin-left:14px;
+	margin-top:-90px;
+	color:#f7f7f7;
+	font-size:13px;
+	padding:0px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	font-family:Tahoma, sans-serif;
+	text-align:left;
+	line-height:16px;
+}
+

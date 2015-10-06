@@ -1,0 +1,258 @@
+
+.map_locations .pins {
+    height: 0%;
+    margin:0 auto;
+    width: 100%;
+   
+}
+
+.pinstitle {
+	visibility:hidden;
+	position:relative;
+	padding-top:24px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	width:400px;
+	top:20px;
+	z-index:999;
+} 
+
+.pins .sao-jose-dos-campos {
+		display:block;
+		position:absolute;
+		width:15px;
+		height:15px;
+		background-image:url(../img/boll_blue.png);
+		background-repeat:no-repeat;
+		z-index:100;
+       
+}
+.pins .sao-jose-dos-campos:hover {
+	background-image:url(../img/boll.png);
+	
+}
+
+.absoluto{
+	position:absolute;
+	left:850px;
+	top:460;
+	}
+
+
+.pins .presidente-prudente {
+	display:block;
+	position:absolute;
+	width:35px;
+	height:35px;
+	background-image:url(../img/boll_blue.png);
+	background-repeat:no-repeat;
+	z-index:100;
+}
+.pins .presidente-prudente:hover {
+	background-image:url(../img/boll.png);
+}
+
+.absoluto1{
+	position:absolute;
+	left:360px;
+	top:390px;
+	}
+
+
+.pins .sao-bernardo {
+	display:block;
+	position:absolute;
+	width:35px;
+	height:35px;
+	background-image:url(../img/boll_blue.png);
+	background-repeat:no-repeat;
+	z-index:100;
+}
+.pins .ppt-sao-bernardo:hover {
+	background-image:url(../img/boll.png);;
+}
+
+
+.absoluto2{
+	position:absolute;
+	left:360px;
+	top:330px;
+	}
+
+
+.pins .app_title {
+	display:block;
+	position:relative;
+	color:#000;
+}
+/*Configuração tamanho das cores dos Titulos*/
+
+.pins a { 
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:10pt;
+}
+
+
+
+
+/* Postos do acessas */
+
+.land{
+			fill: #FFF;
+			stroke: #000;
+			stroke-width: 0.2;
+			stroke-miterlimit: 4;
+		}
+		
+		.coast{
+			stroke-width: 0.5;
+		}
+		
+		.ocean {
+			fill: #FFF;
+			stroke: none;
+		}
+		
+		.other {
+			fill: #fff;
+			stroke: none;
+		}
+		
+		.alert {
+			fill: #F00;
+			stroke: none;
+		}
+
+		.label{
+			font-size: 14px;
+		}
+
+		.land:hover{
+			fill: #999;
+			
+		}
+
+
+
+
+
+/*   Icone de Informações  teste */
+          
+
+.datalist {
+	position: absolute; 
+	z-index: 10;
+	top: 45px;
+	left: 0; 
+   visibility: hidden; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-width: 100%;
+	border: 1px solid #c4c7cc;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	opacity: 0;
+	-webkit-transition: opacity .1s linear, visibility .1s linear;
+	transition: opacity .1s linear, visibility .1s linear;
+	white-space: nowrap;
+	text-align: left;
+	
+	
+}
+.datalist::before {  /* Espaçamento da seta */
+	position: absolute;	
+	top: -6px;
+	left: 12px; 
+	width: 10px;
+	height: 10px;
+	content: '';
+	border: 1px solid #c4c7cc;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-radius: 100% 0 0 0;
+	background: #fff; /*Cor da seta*/
+	box-shadow: 1px 1px 2px rgba(0,0,0,.05);
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg)
+
+}
+.datalist.drop-up {
+	top: auto; 
+	bottom: 100%;
+	margin: 0 0 11px 0;
+	
+   
+} 
+.datalist.drop-up::before { /* virar a seta */
+	top: auto;
+	bottom: -6px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+		
+}
+
+.datalist .options {
+	padding: 1px;
+    list-style-type: none; 
+    color:#000
+}
+.datalist .option { /* tamalho da caixa de notificação */
+	position: relative; 
+	padding: -10px -10px;
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	/*text-overflow: ellipsis;*/
+	font: 1em/1 Arial, sans-serif;
+
+	
+}
+.dropdown-btn .datalist .option {
+	font: 1.091em Arial, sans-serif;
+    color:#000
+    
+}
+
+.datalist .option.hover, .datalist .option:hover {
+	/*background: #000;*/
+	color: #000;
+   
+	
+}
+
+.search-field.default .datalist-hint__text, .search-field.empty .datalist-hint__nothing {
+	display: inline;
+
+
+}
+.dropdown-link,  .dropdown-btn {
+	display: inline-block;
+	position:relative; 
+
+}
+	
+.dropdown-link:hover .datalist, .dropdown-btn.active .datalist, .dropdown-btn.jsddp .datalist {
+	visibility:visible;
+	opacity: 1;
+	
+
+}
+.dropdown-link .datalist:after {
+	position:absolute; 
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	height: 105px;
+	content: '';
+	border: 1px solid transparent
+
+}
