@@ -1,0 +1,52 @@
+#!/usr/bin/expect
+
+
+# monitoramento Sistema Linux.
+# Versão. 1.0
+# Descrição
+#
+# Arquivo de configuração linux.
+#
+# Crie um arquivo bash /usr/local/bin/monitorando.exp com as permissões de root.
+# Esse arquivo contêm informaçoes necessarias para enviar: (Exemplo bauru.txt) via SCP para um servidor remoto onde estará
+# hospedado a aplicação do monitoramento.
+# Informe também o IP e a Senha para o Acesso Externo.
+# Use regras de Seguranças como Portas expecificas ou regras para redirecionamento do Firewall em casos de segurança e usuario
+# Criados que contem permissões necessárias para a realização do procedimento abaixo.
+
+
+# Monitoring Linux system
+# Version . 1.0
+# description
+#
+# Linux configuration file.
+#
+# Create a bash file /usr/local/bin/monitorando.exp with root permissions .
+# This file contains necessary information to send : (Example bauru.txt ) via SCP to a remote server where it will be
+# hosted application monitoring.
+# Also tell IP and Password for External Access .
+# Use rules of Securities as expecificas doors or Firewall redirect to rules in cases of safety and users
+# Created containing necessary permissions to perform the procedure below.
+
+
+set timeout 10
+set prompt "(%|#|\\$) $"
+
+
+eval spawn "scp /usr/local/bin/bauru.txt sshuser@IPdoServidorRemoto:/usr/local/bin/empresa/"
+
+ expect "*password*"
+            send "senhaServidorlinux\r"
+            send "exit\r"
+            expect eof
+
+sleep 30
+
+eval spawn "scp /usr/local/bin/bauru.txt sshuser@IPdoServidorRemoto:/usr/local/bin/empresa/"
+
+ expect "*password*"
+            send "senhaServidorlinux\r"
+            send "exit\r"
+            expect eof
+            exit
+
